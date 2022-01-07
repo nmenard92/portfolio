@@ -1,0 +1,143 @@
+@font-face {
+	font-family: "PassionOne-Bold";
+	src: url("PassionOne-Bold.ttf;");
+	font-weight: bold;
+}
+
+
+body {
+	font-family: var(--ff-sans-normal);
+	font-size:  var(--fs-400);
+	color: hsl(var(--clr-dark));
+	background-color: #FFF818;
+	line-height: 1.5;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	overflow-x: hidden;
+}
+
+
+/* header premier */
+
+.logo {
+	font-family: "PassionOne-Bold";
+	margin: 2rem;
+}
+.message {
+
+	margin: 0;
+
+
+}
+.header-premier {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+	display: none;
+}
+
+.navigation-premier {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	/*background: hsl(0 0% 80% / 0.75);*/
+}
+
+ /*@supports (backdrop-filter:  blur(1rem)) {
+	.navigation-premier {
+		background: hsl(0 0% 70% / 0.5);
+		backdrop-filter:  blur(1rem);
+	}
+} */
+
+.navigation-premier a { /* les <a> qui sont contenu dans la class navigation-premier*/
+	text-decoration: none;
+
+}
+
+.navigation-premier a > [aria-hidden="true"] { /* les <a> qui sont contenu dans la class navigation-premier*/
+	font-weight: 700;
+	margin-inline-end: .40em;
+}
+
+@media (max-width: 45em) {
+
+	.navigation-premier {
+		--gap:  2.5em;
+		z-index: 1000;
+		position: fixed;
+		inset:  0 0 0 30%;
+		flex-direction: column;
+		padding: min(30vh, 10rem) 2em;
+		transform: translateX(100%);
+		transition: transform 200ms ease-out;
+	}
+
+	.message {
+
+		display: none;
+	}
+
+	.navigation-premier[data-visible="true"] {
+		transform: translateX(0%);
+	}
+
+	.mobile-nav-toggle {
+		display: block;
+		position: absolute;	
+		z-index: 9999;
+		background-color: transparent;
+		background-image: url("hamburger-icon.svg");
+		background-repeat: no-repeat;
+		border: 0;
+		width: 2rem;
+		aspect-ratio: 1;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.mobile-nav-toggle[aria-expanded="true"] {
+		background-image: url("x-icon.svg");
+		background-repeat: no-repeat;
+	}
+
+}
+
+@media (min-width: 40em) and (max-width: 55em) {
+	.navigation-premier a > span[aria-hidden] {
+		display: none;
+	}
+}
+
+@media (min-width: 40em) {
+.navigation-premier {
+	--gap: 2rem;
+	padding: 2rem;
+	padding-block: 1rem;
+	padding-inline: 3rem;
+}
+}
+
+.actif {
+	font-family: serif;
+}
+
+.bold {
+
+  font-family: "PassionOne-Bold";
+}
+
+.sr-only {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem); /* Custom property, not define in the roots of the files, so it falls back to te number */
+}
+
+
+
