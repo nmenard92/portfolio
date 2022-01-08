@@ -1,9 +1,9 @@
-@font-face {
+/*@font-face {
 	font-family: "PassionOne-Bold";
 	src: url("PassionOne-Bold.ttf;");
 	font-weight: bold;
 }
-
+*/
 
 body {
 	font-family: var(--ff-sans-normal);
@@ -20,7 +20,7 @@ body {
 /* header premier */
 
 .logo {
-	font-family: "PassionOne-Bold";
+	font-family: sans-serif;
 	margin: 2rem;
 }
 .message {
@@ -121,12 +121,17 @@ body {
 }
 
 .actif {
-	font-family: serif;
+	font-family: sans-serif;
+}
+
+a {
+
+color: black;
 }
 
 .bold {
 
-  font-family: "PassionOne-Bold";
+  font-family: sans-serif;
 }
 
 .sr-only {
@@ -139,6 +144,11 @@ body {
 }
 
 
+
+
+
+/* Nouveau code, fait le 8 janv 2021. Le site fonctionne avec github. le fichier source est dans documents/ */
+
 div.container {
   display: flex;
   flex-wrap: wrap;
@@ -146,31 +156,167 @@ div.container {
   align-items: flex-end;
   flex-flow:row nowrap;
   align-items:stretch;
-
-
-}
-
-div.container1 {
-	width: 25%;
-	box-sizing: border-box;
-
-}
-
-div.container2 {
-	width: 75%;
-	box-sizing: border-box;
-
-}
-
-div.items0 {
+  	margin: 0;
+	padding: 0;
 	width: 100%;
-	box-sizing: border-box;
+padding-top: 3rem;
+
 }
 
 
-div.items {
+
+
+p {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin: 0;
+padding: 0;
+
+
+}
+
+
+
+ul {
+
+	margin: 0;
+	margin-left: 1rem;
+	padding: 0;
+	  list-style-type: circle;
+  list-style-position: outside;
+}
+
+.coordonnees {
+margin: 0;
+padding: 0;
+		  list-style-type: none;
+
+}
+
+
+div.coordonnees {
+
+
+}
+
+p.texteCourant {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin: 0;
+padding: 0;
+	margin-left: 2rem;
+	text-indent: -2rem;
+
+
+}
+
+p.textePresentation {
+	font-weight: lighter;
+	font-style: italic;
+margin-bottom: 2rem;
+font-size: .85rem;
+
+}
+
+
+p.texteCourant-espApres {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin-left: 0;
+padding: 0;
+	margin-left: 2rem;
+	text-indent: -2rem;
+	margin-bottom: 1.5rem;
+
+
+}
+p.titre {
+	font-size: .85rem;
+  text-transform: uppercase;
+	font-family: sans-serif;  
+	font-weight: bold;
+	margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+div.containerIntro {
+	box-sizing: border-box;
+flex-grow: 1;
+  flex-basis: 15%;
+
+}
+
+div.containerCV {
+
+	box-sizing: border-box;
+flex-grow: 3;
+
+}
+
+
+div.plancheCV {
 	border-top: 1px solid black;
-	width: 100%;
 	box-sizing: border-box;
+  clear: both;
+padding-top: 3rem;
+
+}
+div.plancheIntro {
+
+  clear: both;
+padding-left: 2rem;
+padding-right: 3rem;
 }
 
+div.colonneGauche {
+	box-sizing: border-box;
+
+  float: left;
+  width: 25%;
+}
+
+div.colonneDroite {
+
+  float: right;
+  width: 75%;
+
+
+}
+div.presentation {
+  align-items:flex-start;
+
+}
+
+div.coordonnees {
+	  align-items: flex-end;
+
+}
+
+
+p.ville {
+font-size: .85rem;
+
+}
+
+p.role {
+font-size: 1.15rem;
+font-weight: bold;
+}
+
+p.tache {
+
+font-size: .85rem;
+line-height: 1.5rem;
+
+}
+p.tache-espApres {
+font-size: .85rem;
+margin-bottom: 1rem;
+
+
+}
