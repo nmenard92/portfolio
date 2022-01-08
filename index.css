@@ -9,7 +9,6 @@ body {
 	font-family: var(--ff-sans-normal);
 	font-size:  var(--fs-400);
 	color: hsl(var(--clr-dark));
-	background-color: #FFF818;
 	line-height: 1.5;
 	min-height: 100vh;
 	display: grid;
@@ -140,4 +139,38 @@ body {
 }
 
 
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-flow:row nowrap;
+  align-items:stretch;
+
+
+}
+
+div.container1 {
+	width: 25%;
+	box-sizing: border-box;
+
+}
+
+div.container2 {
+	width: 75%;
+	box-sizing: border-box;
+
+}
+
+div.items0 {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+div.items {
+	border-top: 1px solid black;
+	width: 100%;
+	box-sizing: border-box;
+}
 
