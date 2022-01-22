@@ -1,106 +1,121 @@
-.carte {
-	  display: flex;
-	    flex-wrap: wrap;
+@font-face {
+	font-family: "Walkway-UltraExpand";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Walkway-UltraExpand.ttf");
+}
+@font-face {
+	font-family: "Quicksand_Bold";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Bold.otf");
+}
 
+body {
+	  	background-color: red;
+padding: 30px;
+padding-top: 60px;
+}
+
+.carte {
+	display: flex;
+	flex-wrap: wrap;
 	width: 300px;
 	height: 150px;
 	background-color: DarkTurquoise;
 	padding: 0;
-
 }
 
-
-.coinCarte {
-	right: 0;
-	bottom: 0;
-	width: 150px;
-	height: 50px;
-	background-color: black;
-	padding: .4rem;
-
-	padding-left: .6rem;
-}
-
-
-
-
-
-p.carte-titre {
-	font-family: serif;
+p. {
+	font-size: 1rem;
 	color: black;
-	font-size: 1.75rem;
-	line-height: 2.25rem;
 }
 
 
+.ultraExpanded {
+		font-family: "Walkway-UltraExpand";
+
+}
 div.containerIndex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  justify-content: center;
   align-items: flex-end;
   flex-flow:row nowrap;
   align-items:stretch;
-    margin: 0;
 	padding: 0;
-		width: 0;
+	width: 100%;
+
 }
 
-p.texteCourant {
-	font-size: 1rem;
-	font-family: sans-serif;
+div.containerIndexIntro {
+	box-sizing: border-box;
+	flex-grow: 1;
+  flex-basis: 35%;
+}
+
+div.containerIndexCV {
+	box-sizing: border-box;
+	flex-grow: 1;
+  flex-basis: 65%;
+}
+
+div.plancheIndexCV {
+	display: flex;
+	box-sizing: border-box;
+  clear: both;
+}
+
+div.plancheIndexIntro {
+	display: flex;
+	box-sizing: border-box;
+  clear: both;
+}
+
+p.titreIntro {
+		font-size: 6rem;
+			line-height: 12vh;
+		font-family: "Quicksand_Bold";
+padding: 1rem;
 margin: 0;
-padding: 0;
-	margin-left: 2rem;
-	text-indent: -2rem;
+margin-right: 40%;
+text-align: left;
+color: red;
+background: whitesmoke;
+}
 
+p.titreSection {
+	font-size: 5rem;
+	line-height: 6rem;
+	font-family: "Quicksand_Bold";
+color: black;
 
+margin-top: 30px;
+text-align: left;
 }
 
 
 
-
-
-
-div.containerIntro {
-	box-sizing: border-box;
-flex-grow: 1;
-  flex-basis: 15%;
-
-}
-
-div.containerCV {
-
-	box-sizing: border-box;
-flex-grow: 3;
+p.titreOccupation {
+	font-size: 1rem;
+		line-height: 1rem;
+	font-family: "Quicksand_Bold";
+	color: black;
+	padding: 0;
+margin: 0;
 
 }
-
-
-div.plancheCV {
-	border-top: 1px solid black;
-	box-sizing: border-box;
-  clear: both;
-padding-top: 3rem;
-
+p.lien {
+		font-size: 1.25rem;
+		font-family: "Quicksand_Bold";
+		text-align: left;
+		margin-top: 100px;
+color: whitesmoke;
 }
-div.plancheIntro {
+/*
+#vert {
 
-  clear: both;
-padding-left: 2rem;
-padding-right: 3rem;
-}
+		background-color: green;
 
-div.colonneGauche {
-	box-sizing: border-box;
-
-  float: left;
-  width: 25%;
-}
-
-div.colonneDroite {
-
-  float: right;
-  width: 75%;
-
-
-}
+}*/

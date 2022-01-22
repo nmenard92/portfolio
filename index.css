@@ -1,11 +1,15 @@
-/*@font-face {
-	font-family: "PassionOne-Bold";
-	src: url("PassionOne-Bold.ttf;");
-	font-weight: bold;
+@font-face {
+	font-family: "Walkway-UltraExpand";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Walkway-UltraExpand.ttf");
 }
-*/
-
-
+@font-face {
+	font-family: "Quicksand_Bold";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Bold.otf");
+}
 
 
 body {
@@ -14,8 +18,10 @@ body {
 	display: grid;
 	grid-template-rows: min-content 1fr;
 	overflow-x: hidden;
-}
+	  	background-color: white;
 
+
+}
 
 
 #container-qualif {
@@ -35,7 +41,17 @@ body {
 
 }
 
+ul, a{
+	  margin: 0;
+  padding: 0;
+	text-align: left;
+color: black;
 
+      text-decoration: none;
+  list-style-position: none;
+
+
+}
 
 
 
@@ -46,7 +62,7 @@ div.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items:flex-start;
   flex-flow:row nowrap;
   align-items:stretch;
     margin: auto;
@@ -56,6 +72,7 @@ div.container {
 padding-top: 6rem;
 border: 1px black solid;
   overflow: hidden;
+  background-color: white;
 /*background-color: lightblue;
 *//*backdrop-filter: blur(6px);
 opacity: .5;*/
@@ -72,18 +89,12 @@ margin: 0;
 padding: 0;
 
 
+
 }
 
 
 
-ul {
 
-	margin: 0;
-	margin-left: 1rem;
-	padding: 0;
-	  list-style-type: circle;
-  list-style-position: outside;
-}
 
 .coordonnees {
 margin: 0;
@@ -92,11 +103,6 @@ padding: 0;
 
 }
 
-
-div.coordonnees {
-
-
-}
 
 p.texteCourant {
 	font-size: 1rem;
@@ -147,7 +153,7 @@ padding: 0;
 div.containerIntro {
 	box-sizing: border-box;
 flex-grow: 1;
-  flex-basis: 15%;
+  flex-basis: 15%;////////
 
 }
 
@@ -226,6 +232,7 @@ margin-bottom: 1rem;
 }
 
 span.nom {
+		font-family: "Quicksand_Bold";
 	font-size: 2rem;
 	line-height: 2.25rem;
 	font-weight: bold;
@@ -296,6 +303,17 @@ border: 1px black solid;
 div.plancheIntro {
 padding: 0;
 
+}
+
+
+div.coordonnees {
+margin-top: 0;
+margin-bottom: 0;
+
+
+}
+#espaceApres {
+	margin-bottom: 50px;
 }
 
 }

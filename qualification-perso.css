@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Walkway-UltraExpand";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Walkway-UltraExpand.ttf");
+}
+@font-face {
+	font-family: "Quicksand_Bold";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Bold.otf");
+}
+
+.retour {
+	font-family: "Quicksand_Bold";
+	display: inline-block;
+	text-align: center;
+}
+
+.titreIntro{
+color: red;
+	font-size: 3rem;
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+
+nav {
+left: 0;
+	text-align: left;
+margin-bottom: 100px;
+}
