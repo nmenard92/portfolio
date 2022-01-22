@@ -1,0 +1,106 @@
+.carte {
+	  display: flex;
+	    flex-wrap: wrap;
+
+	width: 300px;
+	height: 150px;
+	background-color: DarkTurquoise;
+	padding: 0;
+
+}
+
+
+.coinCarte {
+	right: 0;
+	bottom: 0;
+	width: 150px;
+	height: 50px;
+	background-color: black;
+	padding: .4rem;
+
+	padding-left: .6rem;
+}
+
+
+
+
+
+p.carte-titre {
+	font-family: serif;
+	color: black;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+}
+
+
+div.containerIndex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-flow:row nowrap;
+  align-items:stretch;
+    margin: 0;
+	padding: 0;
+		width: 0;
+}
+
+p.texteCourant {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin: 0;
+padding: 0;
+	margin-left: 2rem;
+	text-indent: -2rem;
+
+
+}
+
+
+
+
+
+
+div.containerIntro {
+	box-sizing: border-box;
+flex-grow: 1;
+  flex-basis: 15%;
+
+}
+
+div.containerCV {
+
+	box-sizing: border-box;
+flex-grow: 3;
+
+}
+
+
+div.plancheCV {
+	border-top: 1px solid black;
+	box-sizing: border-box;
+  clear: both;
+padding-top: 3rem;
+
+}
+div.plancheIntro {
+
+  clear: both;
+padding-left: 2rem;
+padding-right: 3rem;
+}
+
+div.colonneGauche {
+	box-sizing: border-box;
+
+  float: left;
+  width: 25%;
+}
+
+div.colonneDroite {
+
+  float: right;
+  width: 75%;
+
+
+}

@@ -5,10 +5,10 @@
 }
 */
 
+
+
+
 body {
-	font-family: var(--ff-sans-normal);
-	font-size:  var(--fs-400);
-	color: hsl(var(--clr-dark));
 	line-height: 1.5;
 	min-height: 100vh;
 	display: grid;
@@ -17,7 +17,12 @@ body {
 }
 
 
-/* header premier */
+
+#container-qualif {
+	  visibility: hidden;
+
+
+}
 
 .logo {
 	font-family: sans-serif;
@@ -29,119 +34,7 @@ body {
 
 
 }
-.header-premier {
-	align-items: center;
-	justify-content: space-between;
-}
 
-.mobile-nav-toggle {
-	display: none;
-}
-
-.navigation-premier {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	/*background: hsl(0 0% 80% / 0.75);*/
-}
-
- /*@supports (backdrop-filter:  blur(1rem)) {
-	.navigation-premier {
-		background: hsl(0 0% 70% / 0.5);
-		backdrop-filter:  blur(1rem);
-	}
-} */
-
-.navigation-premier a { /* les <a> qui sont contenu dans la class navigation-premier*/
-	text-decoration: none;
-
-}
-
-.navigation-premier a > [aria-hidden="true"] { /* les <a> qui sont contenu dans la class navigation-premier*/
-	font-weight: 700;
-	margin-inline-end: .40em;
-}
-
-@media (max-width: 45em) {
-
-	.navigation-premier {
-		--gap:  2.5em;
-		z-index: 1000;
-		position: fixed;
-		inset:  0 0 0 30%;
-		flex-direction: column;
-		padding: min(30vh, 10rem) 2em;
-		transform: translateX(100%);
-		transition: transform 200ms ease-out;
-	}
-
-	.message {
-
-		display: none;
-	}
-
-	.navigation-premier[data-visible="true"] {
-		transform: translateX(0%);
-	}
-
-	.mobile-nav-toggle {
-		display: block;
-		position: absolute;	
-		z-index: 9999;
-		background-color: transparent;
-		background-image: url("hamburger-icon.svg");
-		background-repeat: no-repeat;
-		border: 0;
-		width: 2rem;
-		aspect-ratio: 1;
-		top: 2rem;
-		right: 2rem;
-	}
-
-	.mobile-nav-toggle[aria-expanded="true"] {
-		background-image: url("x-icon.svg");
-		background-repeat: no-repeat;
-	}
-
-}
-
-@media (min-width: 40em) and (max-width: 55em) {
-	.navigation-premier a > span[aria-hidden] {
-		display: none;
-	}
-}
-
-@media (min-width: 40em) {
-.navigation-premier {
-	--gap: 2rem;
-	padding: 2rem;
-	padding-block: 1rem;
-	padding-inline: 3rem;
-}
-}
-
-.actif {
-	font-family: sans-serif;
-}
-
-a {
-
-color: black;
-}
-
-.bold {
-
-  font-family: sans-serif;
-}
-
-.sr-only {
-	display: none;
-}
-
-.flex {
-	display: flex;
-	gap: var(--gap, 1rem); /* Custom property, not define in the roots of the files, so it falls back to te number */
-}
 
 
 
@@ -152,14 +45,20 @@ color: black;
 div.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
   flex-flow:row nowrap;
   align-items:stretch;
-  	margin: 0;
-	padding: 0;
-	width: 100%;
-padding-top: 3rem;
+    margin: auto;
+	padding: 50px;
+	padding-right: 85px;
+		width: 50%;
+padding-top: 6rem;
+border: 1px black solid;
+  overflow: hidden;
+/*background-color: lightblue;
+*//*backdrop-filter: blur(6px);
+opacity: .5;*/
 
 }
 
@@ -216,6 +115,7 @@ p.textePresentation {
 margin-bottom: 2rem;
 font-size: .85rem;
 
+
 }
 
 
@@ -252,7 +152,6 @@ flex-grow: 1;
 }
 
 div.containerCV {
-
 	box-sizing: border-box;
 flex-grow: 3;
 
@@ -260,10 +159,13 @@ flex-grow: 3;
 
 
 div.plancheCV {
+display: flex;
 	border-top: 1px solid black;
 	box-sizing: border-box;
   clear: both;
 padding-top: 3rem;
+  flex-direction:row;
+
 
 }
 div.plancheIntro {
@@ -312,6 +214,8 @@ p.tache {
 
 font-size: .85rem;
 line-height: 1.5rem;
+margin-left: 1rem;
+text-indent: -1rem;
 
 }
 p.tache-espApres {
@@ -320,3 +224,81 @@ margin-bottom: 1rem;
 
 
 }
+
+span.nom {
+	font-size: 2rem;
+	line-height: 2.25rem;
+	font-weight: bold;
+  font-style: normal;
+
+
+}
+
+@media only screen and (max-width: 1630px) {
+
+div.plancheCV {
+	    display: flex;
+
+  flex-direction:column;
+
+}
+div.colonneGauche {
+		  width: 100%;
+
+}
+p.titre {
+	margin-bottom: 1rem;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+div.plancheCV {
+	    display: flex;
+
+  flex-direction:column;
+
+}
+div.colonneGauche {
+		  width: 100%;
+
+}
+div.colonneDroite {
+		  width: 100%;
+
+}
+p.titre {
+	margin-bottom: 1rem;
+}
+
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow:row nowrap;
+  align-items:stretch;
+    margin: auto;
+	padding: 5vw;
+	padding-right: 4vh;
+		width: 50%;
+padding-top: 5vh;
+border: 1px black solid;
+  overflow: hidden;
+    flex-direction:column;
+
+
+}
+div.plancheIntro {
+padding: 0;
+
+}
+
+}
+
+
+
