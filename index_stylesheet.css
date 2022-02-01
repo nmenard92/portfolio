@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+ }
+
+@font-face {
+	font-family: "Quicksand_Bold";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Bold.otf");
+}
+
+@font-face {
+	font-family: "Quicksand_Book";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Book.otf");
+}
+
+body {
+		background-color: #202020;
+		margin: 2em 3em 0 3em;
+		padding: 0;	
+	}
+
+nav a { 
+color: white; 
+display: inline-block; 
+width: 100%; 
+text-align: center; 
+	text-decoration: none;
+
+}
+
+ul.navigation {
+
+	display: flex;
+}
+
+
+nav {
+	width: 100%;
+}
+
+div.contenantNavigation {
+display: flex;
+	font-family: "Quicksand_Bold";
+}
+
+
+ul.navigation {
+display: flex;
+  flex-direction: row;
+}
+
+ul.sansBullet {
+	font-size: 1.25em;
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+
+}
+
+li.nav-1 {
+	font-size: 1.25em;
+flex-grow: 8;
+align-self: center;
+
+}
+
+li.nav-2 {
+		font-size: 1.25em;
+flex-grow: 1;
+align-self: center;
+min-width: 135px;
+max-width: 135px;
+}
+
+li.nav-3 {
+		font-size: 1.25em;
+flex-grow: 1;
+align-self: center;
+min-width: 135px;
+max-width: 135px;
+
+}
+
+li.nav-4 {
+align-self: center;
+padding-left: 1.5em;
+}
+
+li.nav-1 a {
+	text-align: left;
+}
+
+li.nav-2 a, li.nav-3 a {
+	font-family: "Quicksand_Book";
+	text-align: right;
+
+}
+
+
+
+
+div.cercle {
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	border: 1px white solid;
+}
+
+
+
+li.nav-2 a:hover {
+	color: #FAC73B;
+}
+
+li.nav-3 a:hover {
+	color: #4B97A3;
+}
+

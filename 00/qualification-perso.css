@@ -30,3 +30,7 @@ left: 0;
 	text-align: left;
 margin-bottom: 100px;
 }
+
+ul {
+  list-style-position: inside;
+}

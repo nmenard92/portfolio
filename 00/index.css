@@ -1,0 +1,319 @@
+@font-face {
+	font-family: "Walkway-UltraExpand";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Walkway-UltraExpand.ttf");
+}
+@font-face {
+	font-family: "Quicksand_Bold";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Bold.otf");
+}
+
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	overflow-x: hidden;
+	background-color: white;
+	width: 1189px;
+
+}
+
+
+#container-qualif {
+	  visibility: hidden;
+
+
+}
+
+.logo {
+	font-family: sans-serif;
+	margin: 2em;
+}
+.message {
+
+	margin: 0;
+
+
+}
+
+ul, a{
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		color: black;
+		text-decoration: none;
+	  list-style-position: none;
+}
+
+
+
+
+/* Nouveau code, fait le 8 janv 2021. Le site fonctionne avec github. le fichier source est dans documents/ */
+
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:flex-start;
+  flex-flow:row nowrap;
+  align-items:stretch;
+    margin: auto;
+	padding: 50px;
+	padding-right: 85px;
+		width: 50%;
+padding-top: 6em;
+border: 1px black solid;
+  overflow: hidden;
+  background-color: white;
+/*background-color: lightblue;
+*//*backdrop-filter: blur(6px);
+opacity: .5;*/
+
+}
+
+
+
+
+p {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin: 0;
+padding: 0;
+
+
+
+}
+
+
+
+
+
+.coordonnees {
+margin: 0;
+padding: 0;
+		  list-style-type: none;
+
+}
+
+
+p.texteCourant {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin: 0;
+padding: 0;
+	margin-left: 2em;
+	text-indent: -2em;
+
+
+}
+
+p.textePresentation {
+	font-weight: lighter;
+	font-style: italic;
+margin-bottom: 2rem;
+font-size: .85em;
+
+
+}
+
+
+p.texteCourant-espApres {
+	font-size: 1rem;
+	font-family: sans-serif;
+margin-left: 0;
+padding: 0;
+	margin-left: 2em;
+	text-indent: -2em;
+	margin-bottom: 1.5em;
+
+
+}
+p.titre {
+	font-size: .85rem;
+  text-transform: uppercase;
+	font-family: sans-serif;  
+	font-weight: bold;
+	margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+div.containerIntro {
+	box-sizing: border-box;
+flex-grow: 1;
+  flex-basis: 15%;
+
+}
+
+div.containerCV {
+	box-sizing: border-box;
+flex-grow: 3;
+
+}
+
+
+div.plancheCV {
+display: flex;
+	border-top: 1px solid black;
+	box-sizing: border-box;
+  clear: both;
+padding-top: 3em;
+  flex-direction:row;
+
+
+}
+div.plancheIntro {
+
+  clear: both;
+padding-left: 2em;
+padding-right: 3em;
+}
+
+div.colonneGauche {
+	box-sizing: border-box;
+
+  float: left;
+  width: 25%;
+}
+
+div.colonneDroite {
+
+  float: right;
+  width: 75%;
+
+
+}
+div.presentation {
+  align-items:flex-start;
+
+}
+
+div.coordonnees {
+	  align-items: flex-end;
+
+}
+
+
+p.ville {
+font-size: .85rem;
+
+}
+
+p.role {
+font-size: 1.15rem;
+font-weight: bold;
+}
+
+p.tache {
+
+font-size: .85em;
+line-height: 1.5em;
+margin-left: 1em;
+text-indent: -1em;
+
+}
+p.tache-espApres {
+font-size: .85em;
+margin-bottom: 1em;
+
+
+}
+
+span.nom {
+		font-family: "Quicksand_Bold";
+	font-size: 2em;
+	line-height: 2.25em;
+	font-weight: bold;
+  font-style: normal;
+
+
+}
+
+@media only screen and (max-width: 1630px) {
+
+div.plancheCV {
+	    display: flex;
+
+  flex-direction:column;
+
+}
+div.colonneGauche {
+		  width: 100%;
+
+}
+p.titre {
+	margin-bottom: 1em;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+div.plancheCV {
+	    display: flex;
+
+  flex-direction:column;
+
+}
+div.colonneGauche {
+		  width: 100%;
+
+}
+div.colonneDroite {
+		  width: 100%;
+
+}
+p.titre {
+	margin-bottom: 1rem;
+}
+
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow:row nowrap;
+  align-items:stretch;
+    margin: auto;
+	padding: 5vw;
+	padding-right: 4vh;
+		width: 50%;
+padding-top: 5vh;
+border: 1px black solid;
+  overflow: hidden;
+    flex-direction:column;
+
+
+}
+div.plancheIntro {
+padding: 0;
+
+}
+
+
+div.coordonnees {
+margin-top: 0;
+margin-bottom: 0;
+
+
+}
+#espaceApres {
+	margin-bottom: 50px;
+}
+
+}
+
+
+
