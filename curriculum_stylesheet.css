@@ -74,7 +74,7 @@ div.container {
     margin: 6em auto 0 auto;
 	padding: 50px;
 	padding-right: 85px;
-		width: 75%;
+		width: 50%;
 padding-top: 96px;
   overflow: hidden;
   background-color: white;
@@ -262,7 +262,12 @@ p.titre {
 	margin-bottom: 1em;
 }
 
+div.container {
 
+		width: 75%;
+
+
+}
 
 
 }
@@ -297,7 +302,7 @@ div.container {
     margin: 6em auto 0 auto;
 	padding: 5vw;
 	padding-right: 4vh;
-		width: 50%;
+		width: 85%;
 padding-top: 96px;
   overflow: hidden;
     flex-direction:column;
