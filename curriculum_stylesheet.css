@@ -32,11 +32,11 @@ div.cercle {
 	border: 1px black solid;
 }
 
-#container-qualif {
+/*#container-qualif {
 	  visibility: hidden;
 
 
-}
+}*/
 
 .logo {
 	font-family: sans-serif;
@@ -74,7 +74,7 @@ div.container {
     margin: 6em auto 0 auto;
 	padding: 50px;
 	padding-right: 85px;
-		width: 50%;
+		width: 75%;
 padding-top: 96px;
   overflow: hidden;
   background-color: white;
@@ -246,7 +246,7 @@ span.nom {
 
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1625px) {
 
 div.plancheCV {
 	    display: flex;
@@ -267,7 +267,7 @@ p.titre {
 
 }
 
-@media only screen and (max-width: 1285px) {
+@media only screen and (max-width: 1175px) {
 
 div.plancheCV {
 	    display: flex;
