@@ -1,16 +1,16 @@
 @font-face {
-	font-family: "Walkway-UltraExpand";
-	font-style:normal;
-	font-weight:normal;
-	src : url("fonts/Walkway-UltraExpand.ttf");
-}
-@font-face {
 	font-family: "Quicksand_Bold";
 	font-style:normal;
 	font-weight:normal;
 	src : url("fonts/Quicksand_Bold.otf");
 }
 
+@font-face {
+	font-family: "Quicksand_Book";
+	font-style:normal;
+	font-weight:normal;
+	src : url("fonts/Quicksand_Book.otf");
+}
 
 body {
 	line-height: 1.5;
@@ -27,11 +27,27 @@ color: black;
 
 }
 
-div.cercle {
 
-	border: 1px black solid;
+
+
+div.cercle {
+	background-color: #E7605C;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	border: 1px #E7605C solid;
 }
 
+p.footer {
+	color: black;
+	font-size: 1em;
+		font-family: "Quicksand_Bold";
+	border-top: 3px black solid;
+	padding-top: 20px;
+	text-align: center;
+}
 /*#container-qualif {
 	  visibility: hidden;
 
@@ -329,3 +345,10 @@ margin-bottom: 0;
 
 
 
+li.nav-2 a:hover {
+	color: #E7605C;
+}
+
+li.nav-3 a:hover {
+	color: #4B97A3;
+}
