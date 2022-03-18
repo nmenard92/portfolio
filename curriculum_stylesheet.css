@@ -27,7 +27,15 @@ color: black;
 
 }
 
-
+button.cercle {
+	background-color: #4B97A3;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	border: 1px #4B97A3 solid;
+}
 
 
 div.cercle {
@@ -78,7 +86,6 @@ ul {
 	margin-left: 1em;
 }
 
-/* Nouveau code, fait le 8 janv 2021. Le site fonctionne avec github. le fichier source est dans documents/ */
 
 div.container {
   display: flex;
@@ -123,6 +130,7 @@ padding: 0;
 		  list-style-type: none;
 
 }
+
 
 
 p.texteCourant {
@@ -262,7 +270,7 @@ span.nom {
 
 }
 
-@media only screen and (max-width: 1625px) {
+@media only screen and (max-width: 1850px) {
 
 div.plancheCV {
 	    display: flex;
@@ -289,6 +297,15 @@ div.container {
 }
 
 @media only screen and (max-width: 1175px) {
+
+header {
+
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+}
+
+
 
 div.plancheCV {
 	    display: flex;
@@ -334,21 +351,15 @@ padding: 0;
 div.coordonnees {
 margin-top: 0;
 margin-bottom: 0;
+}
+
 
 
 }
 #espaceApres {
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 }
 
 }
 
 
-
-li.nav-2 a:hover {
-	color: #E7605C;
-}
-
-li.nav-3 a:hover {
-	color: #4B97A3;
-}
